@@ -10,13 +10,15 @@ import { MomentFormComponent } from './moment/moment-form/moment-form.component'
 import { FooterComponent } from "./moment/footer/footer.component";
 import { HeaderComponent } from "./moment/header/header.component";
 import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MessagesComponent } from "./moment/messages/messages.component";
 
 
 @NgModule({
     declarations: [AppComponent],
     providers: [],
     bootstrap: [AppComponent],
-    imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule, CommonModule, HeaderComponent, FooterComponent]
+    imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule, CommonModule, HeaderComponent, FooterComponent, FontAwesomeModule, MessagesComponent]
 })
 export class AppModule {
 

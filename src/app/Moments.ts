@@ -1,5 +1,5 @@
 
-export interface Moment {
+export interface Moments {
   id?:number,
   title:string,
   description:string,

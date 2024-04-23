@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class MommentService {
 private baseApiUrl = environment.baseApiUrl
-private apiUrl = `${this.baseApiUrl}api/moment`
+private apiUrl = `${this.baseApiUrl}api/moments`
 
   constructor(private http:HttpClient) { }
   createMoment(formData: FormData): Observable<FormData>{
