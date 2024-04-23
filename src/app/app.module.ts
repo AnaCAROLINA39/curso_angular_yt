@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -5,16 +6,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HeaderComponent } from "./moments/header/header.component";
-import { FooterComponent } from "./moments/footer/footer.component";
-import { MomentFormComponent } from './moments/moment-form/moment-form.component';
-import { AboutComponent } from './moments/pages/about/about.component';
-import { NewMomentComponent } from './moments/pages/new-moment/new-moment.component';
+import { MomentFormComponent } from './moment/moment-form/moment-form.component';
+import { FooterComponent } from "./moment/footer/footer.component";
+import { HeaderComponent } from "./moment/header/header.component";
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
     declarations: [AppComponent],
     providers: [],
     bootstrap: [AppComponent],
-    imports: [BrowserModule, AppRoutingModule,HttpClientModule,FormsModule,ReactiveFormsModule, HeaderComponent, FooterComponent,AboutComponent,NewMomentComponent,MomentFormComponent]
+    imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule, CommonModule, HeaderComponent, FooterComponent]
 })
-export class AppModule {}
+export class AppModule {
+
+}

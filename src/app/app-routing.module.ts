@@ -1,8 +1,9 @@
-import { NewMomentComponent } from './moments/pages/new-moment/new-moment.component';
-import { AboutComponent } from './moments/pages/about/about.component';
-import { HomeComponent } from './moments/pages/home/home.component';
+
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { HomeComponent } from "./moment/pages/home/home.component";
+import { AboutComponent } from "./moment/pages/about/about.component";
+import { NewMomentComponent } from "./moment/pages/new-moment/new-moment.component";
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
