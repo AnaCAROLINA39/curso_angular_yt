@@ -1,7 +1,7 @@
 
 export interface Moment {
   id?:number;
-  title:string;
+  title: string;
   description:string;
   image:string;
   created_at?:string;
